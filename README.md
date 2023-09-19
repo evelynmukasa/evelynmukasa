@@ -1,6 +1,5 @@
 - 👋 Hi, I’m @evelynmukasa
 - 👀 I’m interested in Web Development 
-- 🌱 I’m currently learning Php
 - 📫 How to reach me Email:mukasawamukasaevelyne@gmail.com ,Instagram:evelyn_mukasa
 
 <!---
