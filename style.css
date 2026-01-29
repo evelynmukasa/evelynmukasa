@@ -25,13 +25,14 @@ body{
 }
 
 p{
-    font-family: "Open Sans" , sans-serif;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 200;
 }
 h2{
-    font-family: "Roboto",sans-serif;
+    font-family: "Montserrat",sans-serif;
     text-transform: uppercase;
     font-size: 2em;
-    font-weight: 900;
+    font-weight:900;
 }
 @media (max-width:768px) {
     h2{
@@ -40,7 +41,7 @@ h2{
     
 }
 h3{
-    font-family: "Open Sans" , sans-serif; 
+    font-family: "Montserrat" , sans-serif; 
 }
 /* Header / Navigation */
 header {
@@ -51,7 +52,7 @@ header {
     height: 80px;
     width: 100%;
     z-index: 1000;
-    background-color: #4c4c4c;
+    background:linear-gradient(135deg , #2c2c2c ,#4c4c4c , #0b0b0b 0%);
     position: fixed;
 }
 @media (max-width:768px) {
@@ -62,11 +63,6 @@ header {
     }   
 }
 
-@media (max-width:1024px) {
-    header{
-        
-    }  
-}
 @media (min-width:768px) {
     header .hero_name{
         display: none;
@@ -77,11 +73,9 @@ nav{
     flex: 1;
     z-index: 1000;
 }
-
-
 .nav-list {
     display:flex;
-    justify-content: center;
+    justify-content:end;
     align-items: center;
     list-style: none;
     gap: 2rem;
@@ -91,23 +85,17 @@ nav{
         display: none;
     }
 }
-
-.nav-links {
-   
-}
-
 .nav-links a {
     text-decoration: none;
     color: #f4f3ef;
     font-size: 1.1em;
-    font-family: "Open Sans" , sans-serif;
-    text-transform: uppercase;
-    font-family: "Roboto" ;
-    font-weight: 900;
+    font-family: "Montserrat" , sans-serif;
+    text-transform: capitalize;
+    font-family: "Montserrat" ;
+    font-weight: 300;
     transition:background-color 0.3s ease-in,border 0.3s ease-in;
     padding: 0.8rem 1.5rem;
     border-radius: 9999px;
-    
 }
 .nav-links a:hover{
     background:linear-gradient(135deg,#f4f3ef78 80%,#f4f3ef97) ;
@@ -123,7 +111,7 @@ nav{
 }
 
 a{
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Montserrat',sans-serif;
     text-transform: uppercase;
     font-weight: 900;
     font-style: normal;
@@ -133,14 +121,14 @@ a{
 
 
 .home-container {
-
-    min-height: 100vh;
+    height: 100vh;
     background:linear-gradient(135deg , #2c2c2c ,#4c4c4c , #0b0b0b 0%);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-end;
     color: #f4f3ef;
-    padding: 5rem;
+    padding:3rem ;
+    gap: 2rem;
 }
 
 @media (max-width:768px) {
@@ -150,6 +138,7 @@ a{
         justify-content: flex-end;
         min-height: fit-content;
         height: fit-content;
+        align-items: center;
     }
     
 }
@@ -160,7 +149,7 @@ a{
     position: relative;
     aspect-ratio: 1;
     border-radius: 72% 28% 59% 41% / 40% 31% 69% 60% ;
-
+    
 }
 
 
@@ -179,11 +168,11 @@ a{
     filter: brightness(1.1);
 }
 
-
 .home-content {
     display:flex ;
     gap: 1.5rem;
     flex-direction: column;
+    justify-content: center;
 }
 @media (max-width:768px) {
     .home-content{
@@ -192,37 +181,25 @@ a{
     }
 }
 
-.home-container h1{
-    font-family: "Courier Prime", monospace;
-    font-size: 4em;
-    font-weight: 400;
+.home-container .hero_name{
+    font-weight: 600;
 }
-
+.hero_name{
+    display: block;
+    text-transform: capitalize;
+    font-style: normal;
+    color: #f48a19;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+}
 @media (max-width:1024px) {
     .home-container h1{
         font-size: 2em;
     }
 }
 
-
-.hero_name{
-    display: block;
-    text-transform: capitalize;
-    font-style: normal;
-    margin-right: 2rem;
-    color: #f48a19;
-    text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-}
-
-.home-container h1 .hero_name .im{
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: capitalize;
-    margin-right: 2rem;
-    color:#f4f3ef ;
-
-}
 @media (max-width:768px) {
     .home-container h1{
       display: none;
@@ -238,7 +215,7 @@ a{
     }
 }
 .home-content h2 {
-      font-size: 2em;
+      font-size: 1.5em;
       font-family: "Courrier" ,monospace;
       text-transform: capitalize;
 }
@@ -249,7 +226,6 @@ a{
     
 }
 .home-content p {
-    margin-top: 1rem;
     font-size: 1.2em;
     line-height: 2em;
     text-align: justify;
@@ -261,12 +237,11 @@ a{
     }
 }
 .home-content .btn {
-    margin-top: 5rem;
+    margin-top: 2rem;
     padding: 1.5rem .5rem;
     border-radius: 9999px;
     text-decoration: none;
     text-align: center;
-    font-size: 25px;
     background:linear-gradient(135deg,#f4f3ef78 80%,#f4f3ef97) ;
     border-right: solid 2px #f4f3ef;
     border-bottom: solid 1.2px #f4f3ef;
@@ -379,6 +354,8 @@ a{
     border-right: solid 2px #f4f3ef;
     border-bottom: solid 1.2px #f4f3ef;
     color:#f4f3ef ;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
 }
 @media (max-width:768px) {
     .experience-card{
@@ -472,6 +449,8 @@ a{
 
 .profiles-card p {
     margin-top: 1rem;
+    font-size: 10px;
+    font-weight: 300;
 }
 @media (max-width:768px) {
     .profiles-card p{
@@ -534,7 +513,7 @@ a{
     justify-content:flex-start;
     margin-top: 1rem;
     gap: 0.5rem;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Montserrat',sans-serif;
 }
 
 .skills-card ul li {
