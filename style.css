@@ -346,6 +346,7 @@ a{
     flex-direction: column;
     justify-content: space-between;
     text-align: justify;
+    height: 100%;
 }
 @media (max-width:768px) {
     .about-content p{
