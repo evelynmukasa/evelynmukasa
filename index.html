@@ -13,7 +13,7 @@
     <header>
        <nav>
         <ul class="nav-list">
-            <li class="nav-links"><a class="active" href="#home">Home</a></li>
+            <li class="nav-links"><a href="#home">Home</a></li>
             <li class="nav-links"><a href="#about">About</a></li>
             <li class="nav-links"><a href="#skills">Skills</a></li>
             <li class="nav-links"><a href="#projects">Projects</a></li>
@@ -33,46 +33,12 @@
                     Passionate about challenges, attention to detail, and pixel-perfect designs.
                     </p>
                     <a href="#contact" class="btn">Contact Us</a>
+                    
                 </div> 
                 <div class="avatar">
-                    <img src="assets/hero_img.png" alt="my_picture" >
+                    <img src="assets/Banner.png" alt="my_picture" >
                 </div>
             </div> 
-        </section>
-        <section id="about" class="about">
-            <h2>Who I Am</h2>
-            <div class="about-container">
-                <div class="about-image">
-                    <img src="assets/about_img.webp" alt="" loading="lazy">
-                </div>
-                <div class="about-content">
-                    <p>
-                        I am a frontend developer with a strong foundation in HTML, CSS, and JavaScript. I thrive on taking on challenges and continuously improving my skills through real-world projects, especially by completing Frontend Mentor challenges. I’m detail-oriented and passionate about creating efficient, user-focused designs that balance aesthetics, usability, and performance. I’m also familiar with SCSS and Bootstrap, with basic knowledge of PHP, and I enjoy exploring new tools and techniques to push the boundaries of modern web development.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="experience" class="experience">
-            <div class="experience-container">
-                <div class="experience-card">
-                    <p>
-                        <span class="number">3+</span><span>years experience</span>
-                    </p>
-                </div>
-                <div class="experience-card">
-                    <p>
-                        <span class="number">6</span><span>projects</span>
-                    </p>
-                </div>
-                <div class="experience-card">
-                    <p>
-                        <span class="number">1</span><span>client</span>
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section  class="profiles">
-            <h2 class="section-title">Let's Connect</h2>
             <div class="profiles-container">
                 <div class="profiles-card">
                     <a href="https://www.frontendmentor.io/profile/evelynmukasa">
@@ -97,6 +63,41 @@
                         <img src="assets/linkedin_logo.png" alt="lindedin_icon">
                         <p>LinkedIn</p> 
                     </a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>Who I Am</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/about_img.webp" alt="" loading="lazy">
+                </div>
+                <div class="about-content">
+                    <p>
+                        I am a frontend developer with a strong foundation in HTML, CSS, and JavaScript. I thrive on taking on challenges and continuously improving my skills through real-world projects, especially by completing Frontend Mentor challenges. I’m detail-oriented and passionate about creating efficient, user-focused designs that balance aesthetics, usability, and performance. I’m also familiar with SCSS and Bootstrap, with basic knowledge of PHP, and I enjoy exploring new tools and techniques to push the boundaries of modern web development.
+                    </p>
+                    <p>
+                        Beyond technical skills, I value clean code, accessibility, and collaboration. I enjoy transforming ideas and designs into responsive, interactive experiences and continuously refining my workflow to deliver high-quality results. I’m motivated by learning, problem-solving, and building products that provide real value to users while meeting modern web standards.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="experience" class="experience">
+            <div class="experience-container">
+                <div class="experience-card">
+                    <p>
+                        <span class="number">3+</span><span>years experience</span>
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <p>
+                        <span class="number">6</span><span>projects</span>
+                    </p>
+                </div>
+                <div class="experience-card">
+                    <p>
+                        <span class="number">1</span><span>client</span>
+                    </p>
                 </div>
             </div>
         </section>
@@ -254,36 +255,7 @@
     }
 
     window.addEventListener("load", typeEffect);
-    
 
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('nav a');
-    const header = document.querySelector('header');
-    const headerHeight = header ? header.offsetHeight : 0;
-
-    console.log('Observed section ids:', Array.from(sections).map(s => s.id));
-    console.log('Nav hrefs:', Array.from(navLinks).map(a => a.getAttribute('href')));
-
-    const observer = new IntersectionObserver(
-        entries => {
-            // choose the most visible intersecting section
-            const visible = entries.filter(e => e.isIntersecting);
-            if (visible.length === 0) return;
-            visible.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-            const top = visible[0];
-            console.log('Active candidate:', top.target.id, 'ratio:', top.intersectionRatio, 'isIntersecting:', top.isIntersecting);
-
-            navLinks.forEach(link => link.classList.remove('active'));
-            const activeLink = top.target.id ? document.querySelector(`nav a[href="#${top.target.id}"]`) : null;
-            if (activeLink) activeLink.classList.add('active');
-        },
-        { rootMargin: `-${headerHeight}px 0px 0px 0px`, threshold: [0, 0.25, 0.5, 0.75, 1] }
-    );
-
-    sections.forEach(section => {
-        console.log('Start observing:', section.id, 'height:', section.getBoundingClientRect().height);
-        observer.observe(section);
-    });
 
 </script>
 </html>
