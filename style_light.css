@@ -76,6 +76,7 @@ header {
         display: block;
         height: fit-content;
         padding: 1rem;
+        position: absolute;
     }   
 }
 
