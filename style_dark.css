@@ -382,7 +382,7 @@ a{
    padding: 1.5rem ;
    min-height: 60vh;
    gap: 2rem;
-   background-color: #0b0b0d;
+   background-color: #f8f8f8;
    margin: 24px;
    border-radius: 24px;
 }
@@ -444,6 +444,7 @@ a{
     display: flex;
     flex-direction: column;
     text-align: justify;
+    color: #0b0b0d;
 }
 
 /* Experience */
@@ -466,13 +467,12 @@ a{
 .experience-card {
     border-radius: 20px;
     width: 20%;
-    border: solid #0b0b0d 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background-color:#0b0b0d;
+    background-color:#f8f8f8;
 }
 @media (max-width:768px) {
     .experience-card{
@@ -486,16 +486,18 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #f8f8f8;
+    color: #0b0b0d;
     font-size: 1em;
     gap: 1rem;
 }
 
 .experience-card span {
     text-transform: uppercase;
+    font-weight: 600;
 }
 .experience-card .number{
     font-size: 2em;
+    font-weight: 900;
 }
 
 /* Skills */
@@ -620,14 +622,14 @@ a{
 .project-card {
     flex: 0 0 calc(33.33% - 48px);
     box-sizing: border-box;
-    background-color: #0b0b0d;
+    background-color: #f8f8f8;
     border-radius: 24px;
     padding: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center ;
-    border: solid #0b0b0d 2px;
+
 }
 @media (max-width:1024px) {
     .project-card{
@@ -645,7 +647,6 @@ a{
     aspect-ratio: 16/9;
     overflow: hidden;
     border-radius: 16px;
-    border: solid #0b0b0d 2px;
 }
 
 .project-preview-image-container img{
@@ -662,6 +663,7 @@ a{
     overflow: hidden;
     padding: 1rem;  
     text-align: justify;
+    color: #0b0b0d;
 }
 
 .project-card a {
@@ -674,8 +676,7 @@ a{
     border-radius: 9999px;
     color:#f8f8f8;
     text-align: center;
-    background-color:#4c4c4c;
-    border: solid 3px #f8f8f8;
+    background-color:#0b0b0d;
 }
 
 
