@@ -191,6 +191,11 @@ a{
     flex-direction: column;
     justify-content: center;
 }
+@media (max-width:1024px) {
+    .home-content{
+        gap: .5rem;
+    }
+}
 @media (max-width:768px) {
     .home-content{
      align-items: center;
@@ -209,10 +214,13 @@ a{
     font-weight: 900;
 }
 @media (max-width:1024px) {
-    .home-container h1 , .hero_name{
+     header .hero_name{
         font-size: 2em;
-       align-self: center;
+        align-self: center;
     }
+    .home-content h1{
+        font-size: 2em;
+     }
 }
 
 @media (max-width:768px) {
@@ -221,6 +229,9 @@ a{
     }
 }
 .home-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     width:50%;
 }
 @media (max-width:768px) {
@@ -249,7 +260,7 @@ a{
 @media (max-width:1024px) {
     .home-content p{
         font-size: 1em;
-        text-align: center;
+        line-height: 1.5em;
     }
 }
 .home-content .btn {
@@ -264,19 +275,19 @@ a{
     width: 40%;
 
 }
+@media (max-width:1024px) {
+    .home-content .btn{
+        margin:.5rem 0 ;
+        width: 50%;
+        padding: 1rem .2rem;
+    }
+}
 @media (max-width:768px) {
     .home-content .btn{
         margin-top: 2rem;
         width: 20%;
     }
     
-}
-@media (max-width:1024px) {
-    .home-content .btn{
-        width: 70%;
-        font-size: 15px;
-
-    }
 }
 /* Profiles */
 .profiles {
@@ -333,7 +344,7 @@ a{
 .profiles-card a img {
     width: 3rem;
 }
-@media (max-width:768px) {
+@media (max-width:1024px) {
     .profiles-card a img{
         width:2rem;
     }
