@@ -405,8 +405,9 @@ a{
     }
     
 }
-.about-container h2{
+.about h2{
     display: block;
+    color: #0b0b0d;
 }
 .about-image {
     width: 40%;
