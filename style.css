@@ -68,7 +68,7 @@ header {
     z-index: 1000;
     background:linear-gradient(135deg , #2c2c2c ,#4c4c4c , #f8f8f8 0%);
     position: fixed;
-    border-radius: 24px;
+    border-radius: 0 0 24px 24px;
     margin: 0 24px;
 }
 @media (max-width:768px) {
@@ -668,6 +668,7 @@ a{
     background-color: #f8f8f8;
     margin: 24px;
     border-radius: 24px;
+    padding: 24px 0;
 }
 
 .contact-container {
