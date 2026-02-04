@@ -569,7 +569,7 @@ a{
     border-radius: 9999px;
     box-shadow:#4c4c4c 2px;
 }
-@media (max-width: 1140px) and (min-width: 769px) {
+@media (max-width: 1140px) {
     .skills-card ul li {
         font-size: .7em;
     }
