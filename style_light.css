@@ -381,6 +381,11 @@ a{
    margin: 24px;
    border-radius: 24px;
 }
+@media (max-width:768px) {
+    .about{
+        padding: 1.5rem 0;
+    }
+}
 
 .about-container {
     display: flex;
@@ -505,6 +510,11 @@ a{
 @media (max-width: 1140px) and (min-width: 769px) {
     .skills{
         padding: 4rem 1rem;
+    }
+}
+@media (max-width:768px) {
+    .skills{
+        padding: 4rem 0;
     }
 }
 .skills h2 {
