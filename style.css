@@ -547,6 +547,7 @@ a{
 
 .skills-card p {
     margin-top: 1rem;
+    text-align: justify;
 }
 @media (max-width: 1140px) and (min-width: 769px) {
     .skills-card p{
