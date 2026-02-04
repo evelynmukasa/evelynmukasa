@@ -474,7 +474,6 @@ a{
         width: 90%;
     }
 }
-
 .experience-card p {
     font-family: 'Montserrat',sans-serif;
     font-weight: 500;
@@ -541,7 +540,7 @@ a{
 }
 @media (max-width:768px) {
     .skills-card{
-        width: calc(100%-24px);
+        width: 90%;
     }
     
 }
@@ -552,6 +551,7 @@ a{
 
 .skills-card p {
     margin-top: 1rem;
+    text-align: justify;
 }
 @media (max-width: 1140px) and (min-width: 769px) {
     .skills-card p{
@@ -574,7 +574,7 @@ a{
     border-radius: 9999px;
     box-shadow:#4c4c4c 2px;
 }
-@media (max-width: 1140px) and (min-width: 769px) {
+@media (max-width: 1140px){
     .skills-card ul li {
         font-size: .7em;
     }
