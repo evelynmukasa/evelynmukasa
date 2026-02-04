@@ -666,7 +666,7 @@ a{
 }
 
 .contact-container {
-    width: 40%;
+    width: 50%;
     display: block;
     padding: 4rem;
     margin: auto;
@@ -682,7 +682,7 @@ a{
     }
  
 }
-@media (max-width:1024px) {
+@media (max-width:1200px) {
     .contact-container{
         width: 70%;
 
