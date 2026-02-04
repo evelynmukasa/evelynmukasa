@@ -536,7 +536,7 @@ a{
 }
 @media (max-width:768px) {
     .skills-card{
-        width: 90%;
+        width: calc(100%-24px);
     }
     
 }
