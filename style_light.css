@@ -14,7 +14,6 @@ html, body {
 }
 body{
     background-color: #f0efed;
-    
 }
 #typing::after {
   content: "_";
@@ -77,6 +76,8 @@ header {
         height: fit-content;
         padding: 1rem;
         position: absolute;
+        margin: 0 12px;
+        width: calc(100% - 24px);
     }   
 }
 
@@ -143,6 +144,7 @@ a{
 @media (max-width:768px) {
     .home{
          padding:  5rem 0 2rem 0 ;
+         margin: 0 12px;
     }
 }
 .home-container {
@@ -385,6 +387,7 @@ a{
 @media (max-width:768px) {
     .about{
         padding: 1.5rem 0;
+        margin: 12px;
     }
 }
 
@@ -516,6 +519,7 @@ a{
 @media (max-width:768px) {
     .skills{
         padding: 4rem 0;
+        margin: 0 12px 24px 12px;
     }
 }
 .skills h2 {
@@ -682,7 +686,11 @@ a{
     border-radius: 24px;
     padding: 24px 0;
 }
-
+@media (max-width:768px) {
+    .contact{
+        margin: 12px;
+    }
+}
 .contact-container {
     width: 50%;
     display: block;
